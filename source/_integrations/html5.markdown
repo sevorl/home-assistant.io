@@ -38,7 +38,7 @@ notify:
     vapid_email: YOUR_EMAIL
 ```
 
-Or 
+Or (deprecated soon)
 
 ```yaml
 # Example configuration.yaml entry. 
@@ -106,7 +106,7 @@ The `html5` platform can only function if all of the following requirements are 
 Assuming you have already configured the platform:
 
 1. Open Home Assistant in Chrome or Firefox.
-2. Load profile page by clicking on the badge next to the Home Assistant title in the sidebar. Assuming you have met all the [requirements](#requirements) above then you should see a new slider for Push Notifications. If the slider is greyed out, ensure you are viewing Home Assistant via its external HTTPS address (and that you have configured the `notify` HTML5 integration in Home Assistant). If the slider is not visible, ensure you are not in the user configuration (Sidebar, Configuration, Users, View User).
+2. Load profile page by clicking on your user name at the very bottom of the side bar. Assuming you have met all the [requirements](#requirements) above then you should see a new slider for Push Notifications. If the slider is greyed out, ensure you are viewing Home Assistant via its external HTTPS address (and that you have configured the `notify` HTML5 integration in Home Assistant). If the slider is not visible, ensure you are not in the user configuration (Sidebar, Configuration, Users, View User).
 3. Slide it to the on position.
 4. Name the device you're using in the alert that appears.
 5. Within a few seconds you should be prompted to allow notifications from Home Assistant.
@@ -119,8 +119,8 @@ Assuming you have already configured the platform:
 Assuming the previous test completed successfully and your browser was registered, you can test the notification as follows:
 
 1. Open Home Assistant in Chrome or Firefox.
-2. Open the sidebar and click the Services button at the bottom (shaped like a remote control), located below the Developer Tools.
-3. From the Services dropdown, search for your HTML5 notify service (e.g., notify.NOTIFIER_NAME) and select it.
+2. Open the sidebar and click the Developer tools button at the bottom.
+3. Switch to the Service Tab. From the Services dropdown, search for your HTML5 notify service (e.g., notify.NOTIFIER_NAME) and select it.
 4. In the Service Data text box enter: `{"message":"hello world"}`, then press the CALL SERVICE button.
 5. If everything worked you should see a popup notification.
 
